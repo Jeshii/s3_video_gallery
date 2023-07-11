@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video Index</title>
+  </head>
+  <body>
+    <h1>Video Index</h1>
+    <ul>
+      {% for video in videos %}
+      <li>
+        <a href="pages/{{ video.page_name }}.html">{{ video.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
